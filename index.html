@@ -1,0 +1,244 @@
+<html>
+
+<head>
+    <title>Restaurant MName</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+    <div class="container">
+        <nav class="hamNavMenu">
+            <a href="#home" class="active">Logo</a>
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks">
+                <a href="#about">About</a>
+                <a href="#menu">Menu</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+
+        <nav class="barNavMenu">
+            <a href="#home">Logo</a>
+            <!-- Navigation links (hidden by default) -->
+            <div class="links">
+                <a href="#about">About</a>
+                <a href="#menu">Menu</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+        </nav>
+
+
+        <div class="slideshowContainer">
+            <!-- images -->
+            <div class="slides fade">
+                <img src="images/pasta.png">
+            </div>
+            <div class="slides fade">
+                <img src="images/dinner.png">
+            </div>
+            <div class="slides fade">
+                <img src="images/salad.png">
+            </div>
+            <div class="slides fade">
+                <img src="images/appetizer.png">
+            </div>
+
+            <!-- arrows -->
+            <a class="previous" onclick="plusSlides(-1)">&#10094</a>
+            <a class="next" onclick="plusSlides(1)">&#10095</a>
+
+
+        </div>
+
+        <div id="about">
+            <p> about restaurant, contact info</p>
+
+        </div>
+
+        <div class="menu">
+            <div class="menuButtons">
+                <button class="button" onclick="displayMenu('breakfast')">Breakfast</button>
+                <button class="button" onclick="displayMenu('lunch')">Lunch</button>
+                <button class="button" onclick="displayMenu('dinner')">Dinner</button>
+                <button class="button" onclick="displayMenu('drink')">Dessert / Drinks</button>
+            </div>
+            <div class="menuShowcase" id="menuDisplay">
+
+            </div>
+
+            <div class="menuItems">
+                <div class="breakfast" id="breakfastItems">
+                    <strong>CHICKEN FRIED STEAK & EGGS $8.99</strong>
+                    <p>A big chicken fried steak patty topped with creamy country gravy, 2 eggs any style, grits or home
+                        fries, biscuits or toast</p>
+
+                    <strong>BISCUITS & GRAVY $4.99</strong>
+                    <p>Two fluffy and flaky biscuits smothered with your choice of creamy sausage gravy or robust tomato
+                        gravy - served with grits or home fries</p>
+
+                    <strong>PAUL BUNYAN BREAKFAST $9.99</strong>
+                    <p>Two eggs any style, bacon or sausage, grits or home fries, biscuit with sausage gravy & short
+                        stack</p>
+
+                    <strong>WESTERN OMELET $6.99</strong>
+                    <p>Ham, onions, bell peppers, all sautéed together them topped with mixed cheese and a bit of
+                        salsa</p>
+
+                    <strong>SOUTHWESTERN OMELET $7.99</strong>
+                    <p>Fried chicken tenders, bell peppers, onions, jalapeños & mixed cheeses</p>
+
+                    <strong>HAM & CHEESE OMELET $5.99</strong>
+                    <p>A generous portion of grilled ham and American cheese</p>
+
+                    <strong>SHORT STACK $3.99</strong>
+                    <p>Two big fluffy buttermilk pancakes</p>
+
+
+                    <strong>FULL STACK $4.99</strong>
+                    <p>Four big fluffy buttermilk pancakes</p>
+
+                    <strong>FRENCH TOAST $5.99</strong>
+                    <p>Made with 3 slices of thick Texas Toast and our own recipe with cinnamon & nutmeg</p>
+
+                    <strong>OATMEAL $1.50</strong>
+                    <p>Very satisfying! (Price per cup - how many would you like?)</p>
+
+                    <strong>MEAT, EGG & CHEESE SANDWICH $2.79</strong>
+                    <p>Choose bacon or sausage, egg & American cheese on flaky biscuit or Texas toast</p>
+
+                    <strong>BREAKFAST BURRITO $4.29</strong>
+                    <p>A warm, large flour tortilla filled with sausage, scrambled eggs, home fries & cheddar
+                        cheese. Served with a side of salsa.</p>
+
+                </div>
+
+                <div class="lunch" id="lunchItems">
+                    <strong>LUNCH FOOD $8.99</strong>
+                    <p>A big chicken fried steak patty topped with creamy country gravy, 2 eggs any style, grits or home
+                        fries, biscuits or toast</p>
+
+                    <strong>BISCUITS & GRAVY $4.99</strong>
+                    <p>Two fluffy and flaky biscuits smothered with your choice of creamy sausage gravy or robust tomato
+                        gravy - served with grits or home fries</p>
+
+                    <strong>PAUL BUNYAN BREAKFAST $9.99</strong>
+                    <p>Two eggs any style, bacon or sausage, grits or home fries, biscuit with sausage gravy & short
+                        stack</p>
+
+                    <strong>WESTERN OMELET $6.99</strong>
+                    <p>Ham, onions, bell peppers, all sautéed together them topped with mixed cheese and a bit of
+                        salsa</p>
+
+                    <strong>SOUTHWESTERN OMELET $7.99</strong>
+                    <p>Fried chicken tenders, bell peppers, onions, jalapeños & mixed cheeses</p>
+
+                    <strong>HAM & CHEESE OMELET $5.99</strong>
+                    <p>A generous portion of grilled ham and American cheese</p>
+
+                    <strong>SHORT STACK $3.99</strong>
+                    <p>Two big fluffy buttermilk pancakes</p>
+
+
+                    <strong>FULL STACK $4.99</strong>
+                    <p>Four big fluffy buttermilk pancakes</p>
+
+                    <strong>FRENCH TOAST $5.99</strong>
+                    <p>Made with 3 slices of thick Texas Toast and our own recipe with cinnamon & nutmeg</p>
+
+                    <strong>OATMEAL $1.50</strong>
+                    <p>Very satisfying! (Price per cup - how many would you like?)</p>
+
+                    <strong>MEAT, EGG & CHEESE SANDWICH $2.79</strong>
+                    <p>Choose bacon or sausage, egg & American cheese on flaky biscuit or Texas toast</p>
+
+                    <strong>BREAKFAST BURRITO $4.29</strong>
+                    <p>A warm, large flour tortilla filled with sausage, scrambled eggs, home fries & cheddar
+                        cheese. Served with a side of salsa.</p>
+
+
+                </div>
+
+                <div class="Dinner" id="dinnerItems">
+                    <strong>DINNER $8.99</strong>
+                    <p>A big chicken fried steak patty topped with creamy country gravy, 2 eggs any style, grits or home
+                        fries, biscuits or toast</p>
+
+                    <strong>BISCUITS & GRAVY $4.99</strong>
+                    <p>Two fluffy and flaky biscuits smothered with your choice of creamy sausage gravy or robust tomato
+                        gravy - served with grits or home fries</p>
+
+                    <strong>PAUL BUNYAN BREAKFAST $9.99</strong>
+                    <p>Two eggs any style, bacon or sausage, grits or home fries, biscuit with sausage gravy & short
+                        stack</p>
+
+                    <strong>WESTERN OMELET $6.99</strong>
+                    <p>Ham, onions, bell peppers, all sautéed together them topped with mixed cheese and a bit of
+                        salsa</p>
+
+                    <strong>SOUTHWESTERN OMELET $7.99</strong>
+                    <p>Fried chicken tenders, bell peppers, onions, jalapeños & mixed cheeses</p>
+
+                    <strong>HAM & CHEESE OMELET $5.99</strong>
+                    <p>A generous portion of grilled ham and American cheese</p>
+
+                    <strong>SHORT STACK $3.99</strong>
+                    <p>Two big fluffy buttermilk pancakes</p>
+
+
+                    <strong>FULL STACK $4.99</strong>
+                    <p>Four big fluffy buttermilk pancakes</p>
+
+                    <strong>FRENCH TOAST $5.99</strong>
+                    <p>Made with 3 slices of thick Texas Toast and our own recipe with cinnamon & nutmeg</p>
+
+                    <strong>OATMEAL $1.50</strong>
+                    <p>Very satisfying! (Price per cup - how many would you like?)</p>
+
+                    <strong>MEAT, EGG & CHEESE SANDWICH $2.79</strong>
+                    <p>Choose bacon or sausage, egg & American cheese on flaky biscuit or Texas toast</p>
+
+                    <strong>BREAKFAST BURRITO $4.29</strong>
+                    <p>A warm, large flour tortilla filled with sausage, scrambled eggs, home fries & cheddar
+                        cheese. Served with a side of salsa.</p>
+
+
+                </div>
+
+                <div class="drinks" id="drinkItems">
+
+                    <strong>COFFEE & HOT CHOCOLATE $1.89</strong>
+
+                    <strong>SOFT DRINKS OR TEA $1.99</strong>
+                    <p>Coke, Diet Coke, Sprite, Dr. Pepper, Root Beer, Fresh Brewed Tea & Lemonade</p>
+
+                    <strong>JUICE $1.99</strong>
+                    <p>Orange, apple, cranberry, tomato</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="reviews">
+
+        </div>
+
+        <div id="social">
+
+        </div>
+
+    </div>
+
+
+    <script src="js/app.js"> </script>
+</body>
+
+</html>
