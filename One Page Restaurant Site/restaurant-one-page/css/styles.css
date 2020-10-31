@@ -1,0 +1,263 @@
+.body {
+    display: flex;
+    margin: auto
+}
+
+h2 {
+  text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+  font-size: 18; 
+
+}
+
+/* Hide Desktop Menu */
+.barNavMenu {
+    display: none;
+}
+
+/* Hamburger Menu */
+/* Style the navigation menu */
+.hamNavMenu {
+    overflow: hidden;
+    background-color: black;
+    position: relative;
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .hamNavMenu #myLinks {
+    display: none;
+  }
+  
+  /* Style navigation menu links */
+  .hamNavMenu a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  /* Style the hamburger menu */
+  .hamNavMenu a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .hamNavMenu a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Style the active link (or home/logo) */
+  .active {
+    background-color: black;
+    color: white;
+  }
+
+/* Slideshow */
+/* Slideshow container */
+.slideshowContainer {
+    max-width: 900px;
+    position: relative;
+    margin: auto;
+}
+
+img {
+    width: 100%;
+}
+
+/* Next & previous buttons */
+.previous, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  /* Position the "next button" to the right */
+.next {
+    right: 0px;
+    border-radius: 3px 0 0 3px;
+}
+
+.slides {
+    display: none;
+  }
+
+.previous:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+  .menuButtons {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .button {
+    background-color: slategray;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    }
+
+    .button hover {
+        background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+        background-color:#408c99;
+        }
+/* 
+    .button active {
+        position:relative;
+        top:1px; */
+
+    .menuShowcase{
+        margin-top: 20px;
+        max-width: 1000px
+    }
+
+    .menuShowcase p {
+        margin-top: 5px;
+    }
+
+    .breakfast {
+        display: none;
+    }
+    .lunch {
+        display: none;
+    }
+    .dinner {
+        display: none;
+    }
+
+    .drinks {
+        display: none;
+    }
+
+
+    .reviews {
+      background-color: slategray;
+      color: white;
+      text-align: center;
+      padding-bottom: 40px;
+    }
+    .featured {
+      display: flex;
+      justify-content: center;
+    }
+
+    .yelp-review {
+      margin: 10px;
+    }
+
+    .contactContainer {
+      display: flex;
+    }
+
+    .hoursContact{
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+  
+
+    .Footer {
+      background-color: slategray;
+      color: white
+
+    }
+  /* Media Query Break */
+  @media only screen and (min-width: 600px) {   
+    .hamNavMenu {
+        display: none;
+    }
+
+    .previous, .next {
+        font-size: 50px;
+      }
+
+    .barNavMenu {
+        display: block;
+        overflow: hidden;
+        background-color: slategray;
+
+    }
+    
+    .barNavMenu a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        float: left;
+        text-align: center;
+    }
+    
+    .links {
+        float: right;
+    } 
+
+    .barNavMenu a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+
+    .menuButtons {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .button {
+        padding: 10px;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        max-width: 1000px;
+
+    }
+
+}
