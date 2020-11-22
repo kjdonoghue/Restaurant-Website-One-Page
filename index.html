@@ -1,16 +1,18 @@
 <html>
 
 <head>
-    <title>Restaurant MName</title>
+    <title>Bistro 63</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/27c6fcf1a5.js" crossorigin="anonymous"></script>
+    
     <link rel="stylesheet" href="css/styles.css" />
 </head>
 
-<body>
+<body onload="displayMenu('breakfast')">
     <div class="container">
         <nav class="hamNavMenu">
-            <a href="#home" class="active">Logo</a>
+            <a href="#home" class="active">Bistro 63</a>
             <!-- Navigation links (hidden by default) -->
             <div id="myLinks">
                 <a href="#about">About</a>
@@ -24,7 +26,7 @@
         </nav>
 
         <nav class="barNavMenu">
-            <a href="#home">Logo</a>
+            <a href="#home">Bistro 63</a>
             <!-- Navigation links (hidden by default) -->
             <div class="links">
                 <a href="#about">About</a>
@@ -56,11 +58,17 @@
 
 
         </div>
+        <div id="about" class="aboutCopy">
+            <h1>Modern American Restaurant and Cocktail Bar </h1>
+                
+            <p>Serving contemporary New England dishes with a commitment to supporting local farms, brewers and distilleries. Bistro 63 regularly features seasonal specials using locally grown produce, an ever changing draft list of local and legendary brews, and seasonal cocktail list!
+                As of 2018 we are proud to feature a 100% organic, biodynamic, and sustainable wine list.
+                With over 250 craft and specialty spirits, we are proud to have some very inspired mad scientists behind the bar to cultivate our world class beverage program. Come in anytime and ask us about having a wine, beer, or spirits tasting!
+                </p>
 
-        <div id="about">
-            <p> about restaurant, contact info</p>
 
         </div>
+        
 
         <div class="menu">
             <div class="menuButtons">
@@ -75,6 +83,8 @@
 
             <div class="menuItems">
                 <div class="breakfast" id="breakfastItems">
+                    <h2>Breakfast Menu</h2>
+
                     <strong>CHICKEN FRIED STEAK & EGGS $8.99</strong>
                     <p>A big chicken fried steak patty topped with creamy country gravy, 2 eggs any style, grits or home
                         fries, biscuits or toast</p>
@@ -120,98 +130,65 @@
                 </div>
 
                 <div class="lunch" id="lunchItems">
-                    <strong>LUNCH FOOD $8.99</strong>
-                    <p>A big chicken fried steak patty topped with creamy country gravy, 2 eggs any style, grits or home
-                        fries, biscuits or toast</p>
+                    <h2>Lunch Menu</h2>
 
-                    <strong>BISCUITS & GRAVY $4.99</strong>
-                    <p>Two fluffy and flaky biscuits smothered with your choice of creamy sausage gravy or robust tomato
-                        gravy - served with grits or home fries</p>
+                    <span>Served with fries. Substitute onion rings for an additional cost</span>
+                       <br/> 
+                       <br/>
+                    <strong>Grilled Chicken Sandwich $7.59</strong>
+                    <p>Grilled Chicken Fingers served on a sesame seed bun with lettuce and tomato. Substitute O-rings +$0.99
+                    
+                    <strong>Burger $7.59</strong>
+                    <p>8 oz burger served with lettuce, tomato, and onion on the side.
+                    With Cheese $7.99Add Bacon +$1Substitute O-rings +$0.99</p>
+                    
+                    <strong>Fried Fish Sandwich $8.59</strong>
+                    <p>Fried Fish Fillet served on a sub roll with lettuce, tomato, and tartar sauce. Substitute O-rings +$0.99</p>
+                    
+                    <strong>Chicken Salad Sandwich $6.99</strong>
+                    <p>Served on toasted sourdough bread with lettuce, tomato, and mayo. Substitute O-rings +$0.99</p>
+                    
+                    <strong>Fried Chicken Sandwich $7.59</strong>
+                    <p>Fried Chicken Fingers served on a sesame seed bun with lettuce and tomato. Substitute O-rings +$0.99</p>
+                    
+                    <strong>Club Sandwich $8.59</strong>
+                    <p>Ham, cheese, turkey, bacon, lettuce and tomato on three pieces of toasted sourdough bread. Substitute O-rings +$0.99</p>
+                    
+                    <strong>Double Burger $9.59</strong>
+                    <p>Homemade burger served with lettuce, tomato, and onion on the side. 
+                    With Cheese $9.99Add Bacon +$1Substitute O-rings +$0.99</p>
 
-                    <strong>PAUL BUNYAN BREAKFAST $9.99</strong>
-                    <p>Two eggs any style, bacon or sausage, grits or home fries, biscuit with sausage gravy & short
-                        stack</p>
-
-                    <strong>WESTERN OMELET $6.99</strong>
-                    <p>Ham, onions, bell peppers, all sautéed together them topped with mixed cheese and a bit of
-                        salsa</p>
-
-                    <strong>SOUTHWESTERN OMELET $7.99</strong>
-                    <p>Fried chicken tenders, bell peppers, onions, jalapeños & mixed cheeses</p>
-
-                    <strong>HAM & CHEESE OMELET $5.99</strong>
-                    <p>A generous portion of grilled ham and American cheese</p>
-
-                    <strong>SHORT STACK $3.99</strong>
-                    <p>Two big fluffy buttermilk pancakes</p>
+                    <strong>BBQ Sandwich $7.59</strong>
+                    <p>Chipped BBQ served on a sesame bun. Substitute O-rings +$0.99
 
 
-                    <strong>FULL STACK $4.99</strong>
-                    <p>Four big fluffy buttermilk pancakes</p>
-
-                    <strong>FRENCH TOAST $5.99</strong>
-                    <p>Made with 3 slices of thick Texas Toast and our own recipe with cinnamon & nutmeg</p>
-
-                    <strong>OATMEAL $1.50</strong>
-                    <p>Very satisfying! (Price per cup - how many would you like?)</p>
-
-                    <strong>MEAT, EGG & CHEESE SANDWICH $2.79</strong>
-                    <p>Choose bacon or sausage, egg & American cheese on flaky biscuit or Texas toast</p>
-
-                    <strong>BREAKFAST BURRITO $4.29</strong>
-                    <p>A warm, large flour tortilla filled with sausage, scrambled eggs, home fries & cheddar
-                        cheese. Served with a side of salsa.</p>
-
+                    
 
                 </div>
 
                 <div class="Dinner" id="dinnerItems">
-                    <strong>DINNER $8.99</strong>
-                    <p>A big chicken fried steak patty topped with creamy country gravy, 2 eggs any style, grits or home
-                        fries, biscuits or toast</p>
+                    <h2>Dinner Menu</h2>
 
-                    <strong>BISCUITS & GRAVY $4.99</strong>
-                    <p>Two fluffy and flaky biscuits smothered with your choice of creamy sausage gravy or robust tomato
-                        gravy - served with grits or home fries</p>
+                    <strong>Monday-Fried Chicken $8.59</strong>
+                    <p>Scalloped potatoes, green beans, corn nuggets and roll</p>
 
-                    <strong>PAUL BUNYAN BREAKFAST $9.99</strong>
-                    <p>Two eggs any style, bacon or sausage, grits or home fries, biscuit with sausage gravy & short
-                        stack</p>
+                    <strong>Tuesday-2 Fried Pork Chops $8.99</strong>
+                    <p>Rice & butter beans, steamed cabbage, macaroni & cheese, and roll.</p>
 
-                    <strong>WESTERN OMELET $6.99</strong>
-                    <p>Ham, onions, bell peppers, all sautéed together them topped with mixed cheese and a bit of
-                        salsa</p>
-
-                    <strong>SOUTHWESTERN OMELET $7.99</strong>
-                    <p>Fried chicken tenders, bell peppers, onions, jalapeños & mixed cheeses</p>
-
-                    <strong>HAM & CHEESE OMELET $5.99</strong>
-                    <p>A generous portion of grilled ham and American cheese</p>
-
-                    <strong>SHORT STACK $3.99</strong>
-                    <p>Two big fluffy buttermilk pancakes</p>
-
-
-                    <strong>FULL STACK $4.99</strong>
-                    <p>Four big fluffy buttermilk pancakes</p>
-
-                    <strong>FRENCH TOAST $5.99</strong>
-                    <p>Made with 3 slices of thick Texas Toast and our own recipe with cinnamon & nutmeg</p>
-
-                    <strong>OATMEAL $1.50</strong>
-                    <p>Very satisfying! (Price per cup - how many would you like?)</p>
-
-                    <strong>MEAT, EGG & CHEESE SANDWICH $2.79</strong>
-                    <p>Choose bacon or sausage, egg & American cheese on flaky biscuit or Texas toast</p>
-
-                    <strong>BREAKFAST BURRITO $4.29</strong>
-                    <p>A warm, large flour tortilla filled with sausage, scrambled eggs, home fries & cheddar
-                        cheese. Served with a side of salsa.</p>
-
+                    <strong>Wednesday-Country Fried Steak OR Hamburger Steak $8.99</strong> 
+                    <p>Gravy, mashed potatoes, fried okra, cream corn and roll.</p>
+                    
+                    <strong>Thursday-Seafood Day</strong>
+                    <p>Comes with fries, Cole Slaw, and Corn DodgersFried Catfish $10.75Fried Shrimp $11.59Fried Oysters $12.59Combo of any two $14.59Combo of any three $16.99Shrimp Basket $6.99Oyster Basket $8.59Side of Shrimp $5.99Side of Oysters $6.99</p>
+                    
+                    <strong>Friday-Chef's Choice</strong>
+                    <p>Please inquire.</p>
 
                 </div>
 
                 <div class="drinks" id="drinkItems">
+
+                    <h2>Drinks</h2>
 
                     <strong>COFFEE & HOT CHOCOLATE $1.89</strong>
 
@@ -227,13 +204,64 @@
 
         </div>
 
-        <div id="reviews">
-
+        <div class="reviews">
+            <h2>What Our Customers Have to Say</h2>
+            <div class="featured">
+                <span class="yelp-review" data-review-id="grlo-f7y9mzZbef_WevSJw" data-hostname="www.yelp.com">Read <a
+                        href="https://www.yelp.com/user_details?userid=mDOLfn0lkhGRLrlJZkh9Pw"
+                        rel="nofollow noopener">Pj H.</a>'s <a
+                        href="https://www.yelp.com/biz/bistro-63-amherst-3?hrid=grlo-f7y9mzZbef_WevSJw"
+                        rel="nofollow noopener">review</a> of <a href="https://www.yelp.com/biz/0ggseJ7x1t-I-I8GA6knjw"
+                        rel="nofollow noopener">Bistro 63</a> on <a href="https://www.yelp.com"
+                        rel="nofollow noopener">Yelp</a>
+                    <script src="https://www.yelp.com/embed/widgets.js" type="text/javascript" async></script></span>
+            </div>
         </div>
 
-        <div id="social">
+        <h2>Visit Us</h2>
+        <div class="contactContainer">
+            <div class="hoursContact">
+                <h4>CONTACT</h4>
+                <b>Address:</b>
+                <address>123 Main</address>
+                <address>City, State, Zip</address>
+                <p>directions</p>
+             
+                <b>Phone:</b>
+                <label>555-555-5555</label>
+                <br></br>
+                <b>Email:</b>
+                <label>email@emailaddress.com</label>
+                
+            </div>
 
+            <div class="hoursContact">
+                <h4>HOURS</h4>
+               <b>Breakfast</b>
+                <label>Mon-Fri 6AM-11AM</label>
+                <label>Sat-Sun 7AM-11AM</label>
+                <br></br>
+                <b>Lunch</b>
+                <label>Mon-Sun 11AM-3PM</label>
+                <br></br>
+                <b>Dinner</b>
+                <label>Sun-Thurs 3PM-8PM</label>
+                <label>Fri-Sat 3PM-9PM</label>
+
+
+            </div>
         </div>
+
+        <div id="social" class="Footer">
+
+            <span style="font-size: 3em; color: white;">
+                <i class="fab fa-facebook"></i>
+              </span>
+            
+                          
+        </div>
+
+        
 
     </div>
 
